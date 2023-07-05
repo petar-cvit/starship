@@ -1,19 +1,16 @@
 {
   "properties": {
-    "nameOverride":  {
+    "nameOverride": {
       "type": "string"
     },
     "fullnameOverride": {
       "type": "string"
     },
-    "nodeSelector":  {
-
+    "nodeSelector": {
     },
     "tolerations": {
-
     },
-    "affinity":  {
-
+    "affinity": {
     },
     "resources": {
       "type": "object",
@@ -42,7 +39,7 @@
         }
       }
     },
-    "exposer":  {
+    "exposer": {
       "type": "object",
       "properties": {
         "image": {
@@ -70,31 +67,915 @@
       }
     },
     "faucet": {
-
+      "type": "object",
+      "properties": {
+        "image": {
+          "type": "string"
+        },
+        "ports": {
+          "type": "object",
+          "properties": {
+            "rest": {
+              "type": "number"
+            }
+          }
+        },
+        "resources": {
+          "type": "object",
+          "properties": {
+            "cpu": {
+              "type": "string"
+            },
+            "memory": {
+              "type": "string"
+            }
+          }
+        }
+      }
     },
-    "timeouts":  {
-
+    "timeouts": {
+      "type": "object",
+      "properties": {
+        "time_iota_ms": {
+          "type": "string"
+        },
+        "timeout_propose": {
+          "type": "string"
+        },
+        "timeout_propose_delta": {
+          "type": "string"
+        },
+        "timeout_prevote": {
+          "type": "string"
+        },
+        "timeout_prevote_delta": {
+          "type": "string"
+        },
+        "timeout_precommit": {
+          "type": "string"
+        },
+        "timeout_precommit_delta": {
+          "type": "string"
+        },
+        "timeout_commit": {
+          "type": "string"
+        }
+      }
     },
     "defaultChains": {
-
+      "type": "object",
+      "properties": {
+        "osmosis": {
+          "type": "object",
+          "properties": {
+            "image": {
+              "type": "string"
+            },
+            "home": {
+              "type": "string"
+            },
+            "binary": {
+              "type": "string"
+            },
+            "prefix": {
+              "type": "string"
+            },
+            "denom": {
+              "type": "string"
+            },
+            "coins": {
+              "type": "string"
+            },
+            "hdPath": {
+              "type": "string"
+            },
+            "coinType": {
+              "type": "string"
+            },
+            "repo": {
+              "type": "string"
+            }
+          },
+          "order": [
+            "image",
+            "home",
+            "binary",
+            "prefix",
+            "denom",
+            "coins",
+            "hdPath",
+            "coinType",
+            "repo"
+          ]
+        },
+        "juno": {
+          "type": "object",
+          "properties": {
+            "image": {
+              "type": "string"
+            },
+            "home": {
+              "type": "string"
+            },
+            "binary": {
+              "type": "string"
+            },
+            "prefix": {
+              "type": "string"
+            },
+            "denom": {
+              "type": "string"
+            },
+            "coins": {
+              "type": "string"
+            },
+            "hdPath": {
+              "type": "string"
+            },
+            "coinType": {
+              "type": "string"
+            },
+            "repo": {
+              "type": "string"
+            }
+          },
+          "order": [
+            "image",
+            "home",
+            "binary",
+            "prefix",
+            "denom",
+            "coins",
+            "hdPath",
+            "coinType",
+            "repo"
+          ]
+        },
+        "wasmd": {
+          "type": "object",
+          "properties": {
+            "image": {
+              "type": "string"
+            },
+            "home": {
+              "type": "string"
+            },
+            "binary": {
+              "type": "string"
+            },
+            "prefix": {
+              "type": "string"
+            },
+            "denom": {
+              "type": "string"
+            },
+            "coins": {
+              "type": "string"
+            },
+            "hdPath": {
+              "type": "string"
+            },
+            "coinType": {
+              "type": "string"
+            },
+            "repo": {
+              "type": "string"
+            }
+          },
+          "order": [
+            "image",
+            "home",
+            "binary",
+            "prefix",
+            "denom",
+            "coins",
+            "hdPath",
+            "coinType",
+            "repo"
+          ]
+        },
+        "cosmos": {
+          "type": "object",
+          "properties": {
+            "image": {
+              "type": "string"
+            },
+            "home": {
+              "type": "string"
+            },
+            "binary": {
+              "type": "string"
+            },
+            "prefix": {
+              "type": "string"
+            },
+            "denom": {
+              "type": "string"
+            },
+            "coins": {
+              "type": "string"
+            },
+            "hdPath": {
+              "type": "string"
+            },
+            "coinType": {
+              "type": "string"
+            },
+            "repo": {
+              "type": "string"
+            }
+          },
+          "order": [
+            "image",
+            "home",
+            "binary",
+            "prefix",
+            "denom",
+            "coins",
+            "hdPath",
+            "coinType",
+            "repo"
+          ]
+        },
+        "simapp": {
+          "type": "object",
+          "properties": {
+            "image": {
+              "type": "string"
+            },
+            "home": {
+              "type": "string"
+            },
+            "binary": {
+              "type": "string"
+            },
+            "prefix": {
+              "type": "string"
+            },
+            "denom": {
+              "type": "string"
+            },
+            "coins": {
+              "type": "string"
+            },
+            "hdPath": {
+              "type": "string"
+            },
+            "coinType": {
+              "type": "string"
+            },
+            "repo": {
+              "type": "string"
+            }
+          },
+          "order": [
+            "image",
+            "home",
+            "binary",
+            "prefix",
+            "denom",
+            "coins",
+            "hdPath",
+            "coinType",
+            "repo"
+          ]
+        },
+        "persistencecore": {
+          "type": "object",
+          "properties": {
+            "image": {
+              "type": "string"
+            },
+            "home": {
+              "type": "string"
+            },
+            "binary": {
+              "type": "string"
+            },
+            "prefix": {
+              "type": "string"
+            },
+            "denom": {
+              "type": "string"
+            },
+            "coins": {
+              "type": "string"
+            },
+            "hdPath": {
+              "type": "string"
+            },
+            "coinType": {
+              "type": "string"
+            },
+            "repo": {
+              "type": "string"
+            }
+          },
+          "order": [
+            "image",
+            "home",
+            "binary",
+            "prefix",
+            "denom",
+            "coins",
+            "hdPath",
+            "coinType",
+            "repo"
+          ]
+        },
+        "stride": {
+          "type": "object",
+          "properties": {
+            "image": {
+              "type": "string"
+            },
+            "home": {
+              "type": "string"
+            },
+            "binary": {
+              "type": "string"
+            },
+            "prefix": {
+              "type": "string"
+            },
+            "denom": {
+              "type": "string"
+            },
+            "coins": {
+              "type": "string"
+            },
+            "hdPath": {
+              "type": "string"
+            },
+            "coinType": {
+              "type": "string"
+            },
+            "repo": {
+              "type": "string"
+            }
+          },
+          "order": [
+            "image",
+            "home",
+            "binary",
+            "prefix",
+            "denom",
+            "coins",
+            "hdPath",
+            "coinType",
+            "repo"
+          ]
+        },
+        "injective": {
+          "type": "object",
+          "properties": {
+            "image": {
+              "type": "string"
+            },
+            "home": {
+              "type": "string"
+            },
+            "binary": {
+              "type": "string"
+            },
+            "prefix": {
+              "type": "string"
+            },
+            "denom": {
+              "type": "string"
+            },
+            "coins": {
+              "type": "string"
+            },
+            "hdPath": {
+              "type": "string"
+            },
+            "coinType": {
+              "type": "string"
+            },
+            "repo": {
+              "type": "string"
+            }
+          },
+          "order": [
+            "image",
+            "home",
+            "binary",
+            "prefix",
+            "denom",
+            "coins",
+            "hdPath",
+            "coinType",
+            "repo"
+          ]
+        },
+        "ics": {
+          "type": "object",
+          "properties": {
+            "image": {
+              "type": "string"
+            },
+            "home": {
+              "type": "string"
+            },
+            "binary": {
+              "type": "string"
+            },
+            "prefix": {
+              "type": "string"
+            },
+            "denom": {
+              "type": "string"
+            },
+            "coins": {
+              "type": "string"
+            },
+            "hdPath": {
+              "type": "string"
+            },
+            "coinType": {
+              "type": "string"
+            },
+            "repo": {
+              "type": "string"
+            }
+          },
+          "order": [
+            "image",
+            "home",
+            "binary",
+            "prefix",
+            "denom",
+            "coins",
+            "hdPath",
+            "coinType",
+            "repo"
+          ]
+        },
+        "cronos": {
+          "type": "object",
+          "properties": {
+            "image": {
+              "type": "string"
+            },
+            "home": {
+              "type": "string"
+            },
+            "binary": {
+              "type": "string"
+            },
+            "prefix": {
+              "type": "string"
+            },
+            "denom": {
+              "type": "string"
+            },
+            "coins": {
+              "type": "string"
+            },
+            "hdPath": {
+              "type": "string"
+            },
+            "coinType": {
+              "type": "string"
+            },
+            "repo": {
+              "type": "string"
+            }
+          },
+          "order": [
+            "image",
+            "home",
+            "binary",
+            "prefix",
+            "denom",
+            "coins",
+            "hdPath",
+            "coinType",
+            "repo"
+          ]
+        },
+        "cryptoorgchain": {
+          "type": "object",
+          "properties": {
+            "image": {
+              "type": "string"
+            },
+            "home": {
+              "type": "string"
+            },
+            "binary": {
+              "type": "string"
+            },
+            "prefix": {
+              "type": "string"
+            },
+            "denom": {
+              "type": "string"
+            },
+            "coins": {
+              "type": "string"
+            },
+            "hdPath": {
+              "type": "string"
+            },
+            "coinType": {
+              "type": "string"
+            },
+            "repo": {
+              "type": "string"
+            }
+          },
+          "order": [
+            "image",
+            "home",
+            "binary",
+            "prefix",
+            "denom",
+            "coins",
+            "hdPath",
+            "coinType",
+            "repo"
+          ]
+        },
+        "evmos": {
+          "type": "object",
+          "properties": {
+            "image": {
+              "type": "string"
+            },
+            "home": {
+              "type": "string"
+            },
+            "binary": {
+              "type": "string"
+            },
+            "prefix": {
+              "type": "string"
+            },
+            "denom": {
+              "type": "string"
+            },
+            "coins": {
+              "type": "string"
+            },
+            "hdPath": {
+              "type": "string"
+            },
+            "coinType": {
+              "type": "string"
+            },
+            "repo": {
+              "type": "string"
+            }
+          },
+          "order": [
+            "image",
+            "home",
+            "binary",
+            "prefix",
+            "denom",
+            "coins",
+            "hdPath",
+            "coinType",
+            "repo"
+          ]
+        },
+        "regen": {
+          "type": "object",
+          "properties": {
+            "image": {
+              "type": "string"
+            },
+            "home": {
+              "type": "string"
+            },
+            "binary": {
+              "type": "string"
+            },
+            "prefix": {
+              "type": "string"
+            },
+            "denom": {
+              "type": "string"
+            },
+            "coins": {
+              "type": "string"
+            },
+            "hdPath": {
+              "type": "string"
+            },
+            "coinType": {
+              "type": "string"
+            },
+            "repo": {
+              "type": "string"
+            }
+          },
+          "order": [
+            "image",
+            "home",
+            "binary",
+            "prefix",
+            "denom",
+            "coins",
+            "hdPath",
+            "coinType",
+            "repo"
+          ]
+        },
+        "quasar": {
+          "type": "object",
+          "properties": {
+            "image": {
+              "type": "string"
+            },
+            "home": {
+              "type": "string"
+            },
+            "binary": {
+              "type": "string"
+            },
+            "prefix": {
+              "type": "string"
+            },
+            "denom": {
+              "type": "string"
+            },
+            "coins": {
+              "type": "string"
+            },
+            "hdPath": {
+              "type": "string"
+            },
+            "coinType": {
+              "type": "string"
+            },
+            "repo": {
+              "type": "string"
+            }
+          },
+          "order": [
+            "image",
+            "home",
+            "binary",
+            "prefix",
+            "denom",
+            "coins",
+            "hdPath",
+            "coinType",
+            "repo"
+          ]
+        },
+        "quicksilver": {
+          "type": "object",
+          "properties": {
+            "image": {
+              "type": "string"
+            },
+            "home": {
+              "type": "string"
+            },
+            "binary": {
+              "type": "string"
+            },
+            "prefix": {
+              "type": "string"
+            },
+            "denom": {
+              "type": "string"
+            },
+            "coins": {
+              "type": "string"
+            },
+            "hdPath": {
+              "type": "string"
+            },
+            "coinType": {
+              "type": "string"
+            },
+            "repo": {
+              "type": "string"
+            }
+          },
+          "order": [
+            "image",
+            "home",
+            "binary",
+            "prefix",
+            "denom",
+            "coins",
+            "hdPath",
+            "coinType",
+            "repo"
+          ]
+        },
+        "sei": {
+          "type": "object",
+          "properties": {
+            "image": {
+              "type": "string"
+            },
+            "home": {
+              "type": "string"
+            },
+            "binary": {
+              "type": "string"
+            },
+            "prefix": {
+              "type": "string"
+            },
+            "denom": {
+              "type": "string"
+            },
+            "coins": {
+              "type": "string"
+            },
+            "hdPath": {
+              "type": "string"
+            },
+            "coinType": {
+              "type": "string"
+            },
+            "repo": {
+              "type": "string"
+            }
+          },
+          "order": [
+            "image",
+            "home",
+            "binary",
+            "prefix",
+            "denom",
+            "coins",
+            "hdPath",
+            "coinType",
+            "repo"
+          ]
+        },
+        "sommelier": {
+          "type": "object",
+          "properties": {
+            "image": {
+              "type": "string"
+            },
+            "home": {
+              "type": "string"
+            },
+            "binary": {
+              "type": "string"
+            },
+            "prefix": {
+              "type": "string"
+            },
+            "denom": {
+              "type": "string"
+            },
+            "coins": {
+              "type": "string"
+            },
+            "hdPath": {
+              "type": "string"
+            },
+            "coinType": {
+              "type": "string"
+            },
+            "repo": {
+              "type": "string"
+            }
+          },
+          "order": [
+            "image",
+            "home",
+            "binary",
+            "prefix",
+            "denom",
+            "coins",
+            "hdPath",
+            "coinType",
+            "repo"
+          ]
+        },
+        "stargaze": {
+          "type": "object",
+          "properties": {
+            "image": {
+              "type": "string"
+            },
+            "home": {
+              "type": "string"
+            },
+            "binary": {
+              "type": "string"
+            },
+            "prefix": {
+              "type": "string"
+            },
+            "denom": {
+              "type": "string"
+            },
+            "coins": {
+              "type": "string"
+            },
+            "hdPath": {
+              "type": "string"
+            },
+            "coinType": {
+              "type": "string"
+            },
+            "repo": {
+              "type": "string"
+            }
+          },
+          "order": [
+            "image",
+            "home",
+            "binary",
+            "prefix",
+            "denom",
+            "coins",
+            "hdPath",
+            "coinType",
+            "repo"
+          ]
+        },
+        "umee": {
+          "type": "object",
+          "properties": {
+            "image": {
+              "type": "string"
+            },
+            "home": {
+              "type": "string"
+            },
+            "binary": {
+              "type": "string"
+            },
+            "prefix": {
+              "type": "string"
+            },
+            "denom": {
+              "type": "string"
+            },
+            "coins": {
+              "type": "string"
+            },
+            "hdPath": {
+              "type": "string"
+            },
+            "coinType": {
+              "type": "string"
+            },
+            "repo": {
+              "type": "string"
+            }
+          },
+          "order": [
+            "image",
+            "home",
+            "binary",
+            "prefix",
+            "denom",
+            "coins",
+            "hdPath",
+            "coinType",
+            "repo"
+          ]
+        }
+      },
+      "order": [
+        "osmosis",
+        "juno",
+        "wasmd",
+        "cosmos",
+        "simapp",
+        "persistencecore",
+        "stride",
+        "injective",
+        "ics",
+        "cronos",
+        "cryptoorgchain",
+        "evmos",
+        "regen",
+        "quasar",
+        "quicksilver",
+        "sei",
+        "sommelier",
+        "stargaze",
+        "ume"
+      ]
     },
-    "defaultRelayers":  {
-
+    "defaultRelayers": {
     },
     "chains": {
-
     },
-    "relayers":  {
-
+    "relayers": {
     },
     "explorer": {
-
     },
-    "registry":  {
-
+    "registry": {
     },
     "collector": {
-
     }
   },
   "order": [
