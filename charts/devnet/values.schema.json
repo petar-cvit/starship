@@ -1,0 +1,120 @@
+{
+  "properties": {
+    "nameOverride":  {
+      "type": "string"
+    },
+    "fullnameOverride": {
+      "type": "string"
+    },
+    "nodeSelector":  {
+
+    },
+    "tolerations": {
+
+    },
+    "affinity":  {
+
+    },
+    "resources": {
+      "type": "object",
+      "properties": {
+        "node": {
+          "type": "object",
+          "properties": {
+            "cpu": {
+              "type": "string"
+            },
+            "memory": {
+              "type": "string"
+            }
+          }
+        },
+        "wait": {
+          "type": "object",
+          "properties": {
+            "cpu": {
+              "type": "string"
+            },
+            "memory": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "exposer":  {
+      "type": "object",
+      "properties": {
+        "image": {
+          "type": "string"
+        },
+        "ports": {
+          "type": "object",
+          "properties": {
+            "rest": {
+              "type": "number"
+            }
+          }
+        },
+        "resources": {
+          "type": "object",
+          "properties": {
+            "cpu": {
+              "type": "string"
+            },
+            "memory": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "faucet": {
+
+    },
+    "timeouts":  {
+
+    },
+    "defaultChains": {
+
+    },
+    "defaultRelayers":  {
+
+    },
+    "chains": {
+
+    },
+    "relayers":  {
+
+    },
+    "explorer": {
+
+    },
+    "registry":  {
+
+    },
+    "collector": {
+
+    }
+  },
+  "order": [
+    "nameOverride",
+    "fullnameOverride",
+    "nodeSelector",
+    "tolerations",
+    "affinity",
+    "resources",
+    "exposer",
+    "faucet",
+    "timeouts",
+    "defaultChains",
+    "defaultRelayers",
+    "chains",
+    "relayers",
+    "explorer",
+    "registry",
+    "collector"
+  ],
+  "title": "Values",
+  "type": "object"
+}
