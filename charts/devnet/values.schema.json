@@ -97,7 +97,7 @@
       "type": "object",
       "properties": {
         "time_iota_ms": {
-          "type": "string"
+          "type": "integer"
         },
         "timeout_propose": {
           "type": "string"
@@ -120,7 +120,17 @@
         "timeout_commit": {
           "type": "string"
         }
-      }
+      },
+      "order": [
+        "time_iota_ms",
+        "timeout_propose",
+        "timeout_propose_delta",
+        "timeout_prevote",
+        "timeout_prevote_delta",
+        "timeout_precommit",
+        "timeout_precommit_delta",
+        "timeout_commit"
+      ]
     },
     "defaultChains": {
       "type": "object",
@@ -150,7 +160,7 @@
               "type": "string"
             },
             "coinType": {
-              "type": "string"
+              "type": "integer"
             },
             "repo": {
               "type": "string"
@@ -193,7 +203,7 @@
               "type": "string"
             },
             "coinType": {
-              "type": "string"
+              "type": "integer"
             },
             "repo": {
               "type": "string"
@@ -236,7 +246,7 @@
               "type": "string"
             },
             "coinType": {
-              "type": "string"
+              "type": "integer"
             },
             "repo": {
               "type": "string"
@@ -279,7 +289,7 @@
               "type": "string"
             },
             "coinType": {
-              "type": "string"
+              "type": "integer"
             },
             "repo": {
               "type": "string"
@@ -322,7 +332,7 @@
               "type": "string"
             },
             "coinType": {
-              "type": "string"
+              "type": "integer"
             },
             "repo": {
               "type": "string"
@@ -365,7 +375,7 @@
               "type": "string"
             },
             "coinType": {
-              "type": "string"
+              "type": "integer"
             },
             "repo": {
               "type": "string"
@@ -408,7 +418,7 @@
               "type": "string"
             },
             "coinType": {
-              "type": "string"
+              "type": "integer"
             },
             "repo": {
               "type": "string"
@@ -451,7 +461,7 @@
               "type": "string"
             },
             "coinType": {
-              "type": "string"
+              "type": "integer"
             },
             "repo": {
               "type": "string"
@@ -494,7 +504,7 @@
               "type": "string"
             },
             "coinType": {
-              "type": "string"
+              "type": "integer"
             },
             "repo": {
               "type": "string"
@@ -537,7 +547,7 @@
               "type": "string"
             },
             "coinType": {
-              "type": "string"
+              "type": "integer"
             },
             "repo": {
               "type": "string"
@@ -580,7 +590,7 @@
               "type": "string"
             },
             "coinType": {
-              "type": "string"
+              "type": "integer"
             },
             "repo": {
               "type": "string"
@@ -623,7 +633,7 @@
               "type": "string"
             },
             "coinType": {
-              "type": "string"
+              "type": "integer"
             },
             "repo": {
               "type": "string"
@@ -666,7 +676,7 @@
               "type": "string"
             },
             "coinType": {
-              "type": "string"
+              "type": "integer"
             },
             "repo": {
               "type": "string"
@@ -709,7 +719,7 @@
               "type": "string"
             },
             "coinType": {
-              "type": "string"
+              "type": "integer"
             },
             "repo": {
               "type": "string"
@@ -752,7 +762,7 @@
               "type": "string"
             },
             "coinType": {
-              "type": "string"
+              "type": "integer"
             },
             "repo": {
               "type": "string"
@@ -795,7 +805,7 @@
               "type": "string"
             },
             "coinType": {
-              "type": "string"
+              "type": "integer"
             },
             "repo": {
               "type": "string"
@@ -838,7 +848,7 @@
               "type": "string"
             },
             "coinType": {
-              "type": "string"
+              "type": "integer"
             },
             "repo": {
               "type": "string"
@@ -881,7 +891,7 @@
               "type": "string"
             },
             "coinType": {
-              "type": "string"
+              "type": "integer"
             },
             "repo": {
               "type": "string"
@@ -924,7 +934,7 @@
               "type": "string"
             },
             "coinType": {
-              "type": "string"
+              "type": "integer"
             },
             "repo": {
               "type": "string"
