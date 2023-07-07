@@ -1095,10 +1095,14 @@
       "properties": {
         "enabled": {
           "type": "boolean"
+        },
+        "image": {
+          "type": "string"
         }
       },
       "order": [
-        "enabled"
+        "enabled",
+        "image"
       ]
     }
   },
