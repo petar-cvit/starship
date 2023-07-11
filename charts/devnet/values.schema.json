@@ -999,6 +999,21 @@
     "defaultRelayers": {
     },
     "chains": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string"
+          },
+          "numValidators": {
+            "type": "integer"
+          }
+        }
+      }
     },
     "relayers": {
     },
