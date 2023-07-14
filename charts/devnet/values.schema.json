@@ -1011,6 +1011,14 @@
           },
           "numValidators": {
             "type": "integer"
+          },
+          "ports": {
+            "type": "object",
+            "properties": {
+              "rest": {
+                "type": "number"
+              }
+            }
           }
         }
       }
