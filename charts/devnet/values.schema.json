@@ -1030,6 +1030,33 @@
       }
     },
     "relayers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string"
+          },
+          "replicas": {
+            "type": "integer"
+          },
+          "chains": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "order": [
+          "name",
+          "type",
+          "numValidators",
+          "ports"
+        ]
+      }
     },
     "explorer": {
       "type": "object",
