@@ -997,6 +997,52 @@
       ]
     },
     "defaultRelayers": {
+      "type": "object",
+      "properties": {
+        "ts-relayer": {
+          "type": "object",
+          "properties": {
+            "image": {
+              "type": "string"
+            }
+          },
+          "order": [
+            "image"
+          ]
+        },
+        "hermes": {
+          "type": "object",
+          "properties": {
+            "image": {
+              "type": "string"
+            }
+          },
+          "order": [
+            "image"
+          ]
+        }
+      },
+      "order": [
+        "osmosis",
+        "juno",
+        "wasmd",
+        "cosmos",
+        "simapp",
+        "persistencecore",
+        "stride",
+        "injective",
+        "ics",
+        "cronos",
+        "cryptoorgchain",
+        "evmos",
+        "regen",
+        "quasar",
+        "quicksilver",
+        "sei",
+        "sommelier",
+        "stargaze",
+        "ume"
+      ]
     },
     "chains": {
       "type": "array",
