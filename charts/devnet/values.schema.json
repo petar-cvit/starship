@@ -1053,8 +1053,8 @@
         "order": [
           "name",
           "type",
-          "numValidators",
-          "ports"
+          "replicas",
+          "chains"
         ]
       }
     },
