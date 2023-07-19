@@ -1020,7 +1020,13 @@
               }
             }
           }
-        }
+        },
+        "order": [
+          "name",
+          "type",
+          "numValidators",
+          "ports"
+        ]
       }
     },
     "relayers": {
