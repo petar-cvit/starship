@@ -14,7 +14,7 @@ spec:
       env:
         {{- include "devnet.genesisVars" $dataExposer | indent 8}}
       command: ['wget']
-      args: ['http://$GENESIS_HOST.default.svc.cluster.local:$GENESIS_PORT/node_id']
+      args: ["http://$GENESIS_HOST.default.svc.cluster.local:$GENESIS_PORT/node_id"]
   restartPolicy: Never
 ---
 {{- end }}
