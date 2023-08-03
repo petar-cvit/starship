@@ -1059,19 +1059,7 @@
             "type": "integer"
           },
           "ports": {
-            "type": "object",
-            "properties": {
-              "rest": {
-                "type": "integer"
-              },
-              "rpc": {
-                "type": "integer"
-              }
-            },
-            "order": [
-              "rest",
-              "rpc"
-            ]
+            "type": "object"
           }
         },
         "order": [
