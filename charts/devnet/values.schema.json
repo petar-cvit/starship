@@ -1059,15 +1059,7 @@
             "type": "integer"
           },
           "ports": {
-            "type": "object",
-            "properties": {
-              "rest": {
-                "type": "integer"
-              }
-            },
-            "order": [
-              "rest"
-            ]
+            "type": "object"
           }
         },
         "order": [
