@@ -1180,7 +1180,12 @@
           "type": "string"
         },
         "ports": {
-          "type": "object"
+          "type": "object",
+          "properties": {
+            "rest": {
+              "type": "number"
+            }
+          }
         },
         "resources": {
           "type": "object",
