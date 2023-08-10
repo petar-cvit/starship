@@ -6,12 +6,6 @@
     "fullnameOverride": {
       "type": "string"
     },
-    "nodeSelector": {
-    },
-    "tolerations": {
-    },
-    "affinity": {
-    },
     "resources": {
       "type": "object",
       "properties": {
@@ -1053,7 +1047,28 @@
             "type": "string"
           },
           "type": {
-            "type": "string"
+            "type": "string",
+            "enum": [
+              "osmosis",
+              "juno",
+              "wasmd",
+              "cosmos",
+              "simapp",
+              "persistencecore",
+              "stride",
+              "injective",
+              "ics",
+              "cronos",
+              "cryptoorgchain",
+              "evmos",
+              "regen",
+              "quasar",
+              "quicksilver",
+              "sei",
+              "sommelier",
+              "stargaze",
+              "umee"
+            ]
           },
           "numValidators": {
             "type": "integer"
@@ -1079,7 +1094,12 @@
             "type": "string"
           },
           "type": {
-            "type": "string"
+            "type": "string",
+            "enum": [
+              "hermes",
+              "ts-relayer",
+              "go-relayer"
+            ]
           },
           "replicas": {
             "type": "integer"
@@ -1106,7 +1126,10 @@
           "type": "boolean"
         },
         "type": {
-          "type": "string"
+          "type": "string",
+          "enum": [
+            "ping-sub"
+          ]
         },
         "image": {
           "type": "string"
@@ -1115,12 +1138,7 @@
           "type": "boolean"
         },
         "ports": {
-          "type": "object",
-          "properties": {
-            "rest": {
-              "type": "number"
-            }
-          }
+          "type": "object"
         },
         "resources": {
           "type": "object",
@@ -1157,12 +1175,7 @@
           "type": "string"
         },
         "ports": {
-          "type": "object",
-          "properties": {
-            "rest": {
-              "type": "number"
-            }
-          }
+          "type": "object"
         },
         "resources": {
           "type": "object",
@@ -1206,9 +1219,6 @@
   "order": [
     "nameOverride",
     "fullnameOverride",
-    "nodeSelector",
-    "tolerations",
-    "affinity",
     "resources",
     "exposer",
     "faucet",
