@@ -52,12 +52,7 @@
           "type": "string"
         },
         "ports": {
-          "type": "object",
-          "properties": {
-            "rest": {
-              "type": "number"
-            }
-          }
+          "type": "object"
         },
         "resources": {
           "type": "object",
@@ -88,12 +83,7 @@
           "type": "string"
         },
         "ports": {
-          "type": "object",
-          "properties": {
-            "rest": {
-              "type": "number"
-            }
-          }
+          "type": "object"
         },
         "resources": {
           "type": "object",
@@ -1138,12 +1128,7 @@
           "type": "boolean"
         },
         "ports": {
-          "type": "object",
-          "properties": {
-            "rest": {
-              "type": "number"
-            }
-          }
+          "type": "object"
         },
         "resources": {
           "type": "object",
