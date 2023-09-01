@@ -1183,6 +1183,12 @@
           ]
         }
       },
+      "required": [
+        "enabled",
+        "image",
+        "ports",
+        "resources"
+      ],
       "order": [
         "enabled",
         "image",
