@@ -1066,13 +1066,16 @@
           },
           "ports": {
             "type": "object"
-          }
+          }          
         },
         "order": [
           "name",
           "type",
           "numValidators",
           "ports"
+        ],
+        "required": [
+          "name"
         ]
       }
     },
