@@ -1075,7 +1075,8 @@
           "ports"
         ],
         "required": [
-          "name"
+          "name",
+          "numValidators"
         ]
       }
     },
